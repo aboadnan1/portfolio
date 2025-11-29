@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelrahman Adnan | Full-Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 nav-glass">
+        <div class="max-w-7xl mx-auto px-6 py-5">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold logo-text">3dnan</div>
+                
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex space-x-10">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-slate-300 text-2xl hover:text-blue-400 transition-colors" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="flex flex-col items-center justify-center h-full space-y-8">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div id="particles" class="particles-container"></div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Abdelrahman Adnan</h1>
+            <p class="hero-subtitle">Full-Stack Developer</p>
+            <p class="hero-description">Crafting innovative web solutions with Django, React, and modern technologies. Passionate about building scalable applications and solving complex problems.</p>
+            
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">
+                    View My Work <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <a href="#contact" class="btn-secondary">
+                    Let's Connect <i class="fas fa-envelope ml-2"></i>
+                </a>
+            </div>
+            
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="https://github.com/aboadnan1" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/abdelrahman-adnan-9b793219b/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/abdelrahmanadnan7" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/3dnan.36/" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="section-title">About Me</h2>
+            <div class="title-underline"></div>
+            
+            <div class="grid md:grid-cols-2 gap-16 items-center mt-16">
+                <div class="about-content">
+                    <p class="about-text">
+                        I'm a passionate Full-Stack Developer specializing in building robust web applications with modern technologies. With expertise in Django, React, and database management, I create scalable solutions that solve real-world problems.
+                    </p>
+                    <p class="about-text">
+                        My journey in software development has led me to work on diverse projects ranging from e-commerce platforms to data visualization dashboards. I'm constantly learning and exploring new technologies to stay at the forefront of web development.
+                    </p>
+                    
+                    <!-- Skills -->
+                    <div class="skills-section">
+                        <h3 class="skills-title">Technical Skills</h3>
+                        <div class="skills-grid">
+                            <span class="skill-badge">HTML/CSS</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">React</span>
+                            <span class="skill-badge">Django</span>
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">Shell Scripting</span>
+                            <span class="skill-badge">MySQL</span>
+                            <span class="skill-badge">PostgreSQL</span>
+                            <span class="skill-badge">Git/GitHub</span>
+                            <span class="skill-badge">Bootstrap</span>
+                            <span class="skill-badge">Responsive Design</span>
+                            <span class="skill-badge">REST APIs</span>
+                            <span class="skill-badge">Jenkins</span>
+                            <span class="skill-badge">Java</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image-container">
+                    <div class="about-image-wrapper">
+                        <img src="./assets/me.jpeg" alt="Abdelrahman Adnan" class="about-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding bg-section">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="title-underline"></div>
+            
+            <div class="projects-grid">
+                <!-- Django Project -->
+                <div class="project-card">
+                    <div class="project-image bg-gradient-1">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Django Full-Stack App</h3>
+                        <p class="project-description">A comprehensive full-stack web application built with Django and JavaScript. Features user authentication, dynamic content management, and responsive design.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Django</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aboadnan1/Django_project" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bash DBMS -->
+                <div class="project-card">
+                    <div class="project-image bg-gradient-2">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Bash Database System</h3>
+                        <p class="project-description">A simple yet powerful database management system implemented using Shell scripting. Supports CRUD operations and data persistence.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Shell</span>
+                            <span class="project-tag">Bash</span>
+                            <span class="project-tag">Linux</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aboadnan1/simple-bash-dbms" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Registration Form -->
+                <div class="project-card">
+                    <div class="project-image bg-gradient-3">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Registration Form System</h3>
+                        <p class="project-description">A responsive registration form built with HTML, CSS, and Bootstrap. Features form validation, modern UI design, and mobile-first approach.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">Bootstrap</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aboadnan1/Registration-Form" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Python To-Do List -->
+                <div class="project-card">
+                    <div class="project-image bg-gradient-4">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Python To-Do List</h3>
+                        <p class="project-description">A task management application built with Python. Features include task creation, editing, deletion, and priority management with clean CLI interface.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">CLI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aboadnan1/TDL_Python" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Jenkins Lab -->
+                <div class="project-card">
+                    <div class="project-image bg-gradient-5">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Jenkins CI/CD Pipeline</h3>
+                        <p class="project-description">Continuous Integration and Deployment pipeline implementation using Jenkins. Automates build, test, and deployment processes for Java applications.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Jenkins</span>
+                            <span class="project-tag">Java</span>
+                            <span class="project-tag">DevOps</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aboadnan1/lab3_jenkins" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- JavaScript Practice -->
+                <div class="project-card">
+                    <div class="project-image bg-gradient-6">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">JavaScript Projects</h3>
+                        <p class="project-description">Collection of interactive JavaScript projects demonstrating various concepts including DOM manipulation, event handling, and modern ES6+ features.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">ES6+</span>
+                            <span class="project-tag">DOM</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aboadnan1/js_practice" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="title-underline"></div>
+            <p class="contact-subtitle">Have a project in mind? Let's work together to bring your ideas to life!</p>
+            
+            <div class="contact-container">
+                <div class="contact-item">
+                    <div class="contact-icon bg-gradient-1">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-info">
+                        <p class="contact-label">Email</p>
+                        <a href="gmail:abdelrhmanadnan3@gmail.com" class="contact-value">abdelrhmanadnan3@gmail.com</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon bg-gradient-2">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="contact-info">
+                        <p class="contact-label">LinkedIn</p>
+                        <a href="https://www.linkedin.com/in/abdelrahman-adnan-9b793219b/" target="_blank" class="contact-value">Connect on LinkedIn</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon bg-gradient-3">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="contact-info">
+                        <p class="contact-label">GitHub</p>
+                        <a href="https://github.com/aboadnan1" target="_blank" class="contact-value">Check out my repositories</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon bg-gradient-4">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <div class="contact-info">
+                        <p class="contact-label">Facebook</p>
+                        <a href="https://www.facebook.com/abdelrahmanadnan7" target="_blank" class="contact-value">Connect on Facebook</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon bg-gradient-5">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="contact-info">
+                        <p class="contact-label">Instagram</p>
+                        <a href="https://www.instagram.com/3dnan.36/" target="_blank" class="contact-value">Follow on Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="footer-name">Abdelrahman Adnan</p>
+                    <p class="footer-role">Full-Stack Developer</p>
+                </div>
+                
+                <p class="footer-copyright">&copy; 2025 3dnan. All rights reserved.</p>
+                
+                <div class="footer-social">
+                    <a href="https://github.com/aboadnan1" target="_blank" class="footer-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abdelrahman-adnan-9b793219b/" target="_blank" class="footer-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.facebook.com/abdelrahmanadnan7" target="_blank" class="footer-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/3dnan.36/" target="_blank" class="footer-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
